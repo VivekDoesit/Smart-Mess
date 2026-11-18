@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Palette from design reference:
+       1. Warm crisp background: #FAF9F5 / #F5F4EE
+       2. Clean card background: #FFFFFF
+       3. Soft sage/lime accent: #D8EAA2 (badge, highlight, secondary green)
+       4. Fresh herbal sage primary: #658E48 / #587C3E (buttons, brand, eco focus)
+       5. Dark herbal text: #1B2418 / #232B1F
+       6. Soft border: #E8E5DC
+       7. Coral alert: #E06346 / #F9ECE8
+    */
+    --bg-page: #FAF9F5;
+    --bg-surface: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --border-subtle: #E8E5DC;
+    --border-strong: #D5D0C2;
+    --brand-dark: #1F281B;
+    --brand-text-muted: #646E5E;
+    --brand-primary: #5A833E;
+    --brand-primary-hover: #4D7234;
+    --brand-lime: #D6E79D;
+    --brand-lime-soft: #F0F6DC;
+    --brand-coral: #D95D39;
+    --brand-coral-soft: #FDF0EC;
+  }
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--brand-dark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8E2CB;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BACAA9;
+}
